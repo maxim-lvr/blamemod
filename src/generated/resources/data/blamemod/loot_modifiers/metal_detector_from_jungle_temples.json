@@ -1,0 +1,10 @@
+{
+  "type": "blamemod:add_item",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chest/jungle_temple"
+    }
+  ],
+  "item": "blamemod:metal_detector"
+}

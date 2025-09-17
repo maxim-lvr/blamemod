@@ -1,0 +1,18 @@
+{
+  "parent": "minecraft:item/handled",
+  "loader": "forge:separate_transforms",
+  "base": {
+    "parent": "blamemod:item/key_card_3d"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "blamemod:item/key_card_3d"
+    },
+    "ground": {
+      "parent": "blamemod:item/key_card_3d"
+    },
+    "fixed": {
+      "parent": "blamemod:item/key_card_3d"
+    }
+  }
+}

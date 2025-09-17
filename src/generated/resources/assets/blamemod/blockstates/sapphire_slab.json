@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "blamemod:block/sapphire_slab"
+    },
+    "type=double": {
+      "model": "blamemod:block/sapphire_block"
+    },
+    "type=top": {
+      "model": "blamemod:block/sapphire_slab_top"
+    }
+  }
+}

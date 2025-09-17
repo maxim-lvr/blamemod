@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handled",
+  "textures": {
+    "layer0": "blamemod:item/key_card"
+  }
+}

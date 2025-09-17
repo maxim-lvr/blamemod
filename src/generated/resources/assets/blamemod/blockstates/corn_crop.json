@@ -1,0 +1,31 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "blamemod:block/corn_stage_0"
+    },
+    "age=1": {
+      "model": "blamemod:block/corn_stage_1"
+    },
+    "age=2": {
+      "model": "blamemod:block/corn_stage_2"
+    },
+    "age=3": {
+      "model": "blamemod:block/corn_stage_3"
+    },
+    "age=4": {
+      "model": "blamemod:block/corn_stage_4"
+    },
+    "age=5": {
+      "model": "blamemod:block/corn_stage_5"
+    },
+    "age=6": {
+      "model": "blamemod:block/corn_stage_6"
+    },
+    "age=7": {
+      "model": "blamemod:block/corn_stage_7"
+    },
+    "age=8": {
+      "model": "blamemod:block/corn_stage_8"
+    }
+  }
+}

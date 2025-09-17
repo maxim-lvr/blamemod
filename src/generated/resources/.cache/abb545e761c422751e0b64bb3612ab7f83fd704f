@@ -1,0 +1,9 @@
+// 1.20.1	2025-09-02T19:06:25.652217518	Tags for minecraft:block mod id blamemod
+526d82d7a8e68704a2653f15ccefded2d91cd2da data/blamemod/tags/blocks/metal_detector_valuables.json
+80a01d0c35834602d5287f836c561b3cb5fdcefe data/blamemod/tags/blocks/needs_sapphire_tool.json
+4f91ec6ea6dc3eb4e15a7b857b77fe908ebd0c60 data/minecraft/tags/blocks/fence_gates.json
+27174fcd49dfb0c7388dfd6a948658113aba0aa7 data/minecraft/tags/blocks/fences.json
+77a7732eae716e60353e78da282447cbadc787bb data/minecraft/tags/blocks/mineable/pickaxe.json
+975f6d7788aa01f268d46a519bb9dc39aeb578a8 data/minecraft/tags/blocks/needs_diamond_tool.json
+567d5f6df147f99ee8fc9c1d4b3851d3bdcfcc97 data/minecraft/tags/blocks/needs_iron_tool.json
+84f8cf92e8e5deffc72cdba73fdcdd473f5d7ec8 data/minecraft/tags/blocks/walls.json

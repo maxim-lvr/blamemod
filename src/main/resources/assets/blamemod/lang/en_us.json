@@ -1,0 +1,49 @@
+{
+  "item.blamemod.sapphire": "Sapphire",
+  "item.blamemod.raw_sapphire": "Raw Sapphire",
+  "item.blamemod.metal_detector": "metal detector",
+  "item.blamemod.strawberry": "strawberry",
+  "item.blamemod.pine_cone": "pine cone",
+  "item.blamemod.key_card": "key card",
+
+  "item.blamemod.sapphire_sword": "Sapphire sword",
+  "item.blamemod.sapphire_pickaxe": "Sapphire pickaxe",
+  "item.blamemod.sapphire_axe": "Sapphire axe",
+  "item.blamemod.sapphire_shovel": "Sapphire shovel",
+  "item.blamemod.sapphire_hoe": "Sapphire hoe",
+  "item.blamemod.sapphire_helmet": "Sapphire helmet",
+  "item.blamemod.sapphire_chestplate": "Sapphire chestplate",
+  "item.blamemod.sapphire_leggings": "Sapphire leggings",
+  "item.blamemod.sapphire_boots": "Sapphire boots",
+
+  "item.blamemod.strawberry_seeds": "Strawberry seeds",
+  "item.blamemod.corn_seeds": "Corn seeds",
+  "item.blamemod.corn": "Corn",
+  "block.blamemod.catmint": "Catmint",
+  "item.blamemod.jumping_ball": "Jumping Ball",
+  "item.blamemod.bar_brawl_music_disc": "Bar Brawl Disc",
+  "item.blamemod.bar_brawl_music_disc.desc": "Bryan Tech - Bar brawl",
+
+  "block.blamemod.sapphire_block": "Block of sapphire",
+  "block.blamemod.raw_sapphire_block": "Block of raw sapphire",
+  "block.blamemod.sound_block": "sound block",
+
+  "tooltip.blamemod.metal_detector.tooltip": "Finds valuable underground!",
+  "tooltip.blamemod.jumping_ball.tooltip": "Lets right click",
+
+  "block.blamemod.sapphire_stairs": "sapphire stairs",
+  "block.blamemod.sapphire_slab": "sapphire slab",
+  "block.blamemod.sapphire_button": "sapphire button",
+  "block.blamemod.sapphire_pressure_plate": "sapphire pressure plate",
+  "block.blamemod.sapphire_fence": "sapphire fence",
+  "block.blamemod.sapphire_fence_gate": "sapphire fence gate",
+  "block.blamemod.sapphire_wall": "sapphire wall",
+  "block.blamemod.sapphire_door": "sapphire door",
+  "block.blamemod.sapphire_trapdoor": "sapphire trapdoor",
+
+  "entity.minecraft.villager.blamemod.soundmaster": "Sound Master",
+
+  "sounds.blamemod.metal_detector_found_ore": "Metal Detector Jingle",
+
+  "creativetab.blamemod_tab": "BlameMod Tab"
+}

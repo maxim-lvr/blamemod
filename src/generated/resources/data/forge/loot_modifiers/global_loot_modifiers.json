@@ -1,0 +1,9 @@
+{
+  "entries": [
+    "blamemod:pine_cone_from_grass",
+    "blamemod:pine_cone_from_creeper",
+    "blamemod:metal_detector_from_suspicious_sand",
+    "blamemod:metal_detector_from_jungle_temples"
+  ],
+  "replace": false
+}

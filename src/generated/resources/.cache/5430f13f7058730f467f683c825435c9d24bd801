@@ -1,0 +1,6 @@
+// 1.20.1	2025-09-10T15:47:51.280325525	Global Loot Modifiers : blamemod
+153942d97db222ab996a6c8d6a7334a773f7173d data/blamemod/loot_modifiers/metal_detector_from_jungle_temples.json
+cb7a3575117457830225a069e070bb1c882a3bc5 data/blamemod/loot_modifiers/metal_detector_from_suspicious_sand.json
+abf9d14c9f32503c98cda2410d633bcd81b022b4 data/blamemod/loot_modifiers/pine_cone_from_creeper.json
+8476ebc8df939b194a654a286de5d2aaf4cdc99f data/blamemod/loot_modifiers/pine_cone_from_grass.json
+addd15f8c451ae75ed9db727f0925608b2d06b05 data/forge/loot_modifiers/global_loot_modifiers.json
