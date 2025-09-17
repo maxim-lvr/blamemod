@@ -2,14 +2,11 @@ package net.maxou.blamemod.item;
 
 import net.maxou.blamemod.BlameMod;
 import net.maxou.blamemod.block.ModBlocks;
-import net.maxou.blamemod.item.custom.MetalDetectorItem;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
-import net.minecraft.world.level.block.Block;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
@@ -64,6 +61,8 @@ public class ModCreativeModTabs {
 
                         output.accept(ModItems.RHINO_SPAWN_EGG.get());
                         output.accept(ModItems.DRONE_SPAWN_EGG.get());
+
+                        output.accept(ModBlocks.FAKE_STONE.get());
 
 
 

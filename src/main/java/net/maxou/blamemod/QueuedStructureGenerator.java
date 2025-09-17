@@ -25,7 +25,7 @@ public class QueuedStructureGenerator {
     // Réglages généraux
     private static final int TILE_CHUNKS = 2;
     private static final int CHUNK_SIZE  = 16;
-    private static final int BUILDING_Y  = -30;
+    private static final int BUILDING_Y  = 112;
     private static final float SPAWN_CHANCE = 1.0f;
     private static final List<Integer> ROOF_LEVELS = List.of(-60, -7, 46, 109, 250);
 

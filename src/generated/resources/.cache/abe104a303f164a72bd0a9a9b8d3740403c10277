@@ -1,6 +1,8 @@
-// 1.20.1	2025-09-10T20:16:08.000541371	Block States: blamemod
+// 1.20.1	2025-09-17T22:11:48.001295602	Block States: blamemod
 e420a4b81d0b406a5873b810aa3a37dc53d566b3 assets/blamemod/blockstates/catmint.json
 6c384b54887894a0b48f33d177d9aa79171c3246 assets/blamemod/blockstates/corn_crop.json
+12d3071718414b5506f72dd2cce7f7ac77382b97 assets/blamemod/blockstates/fake_stone.json
+2d89f8ab4accf8f0cdb83ae98e7a4d25fc771045 assets/blamemod/blockstates/fake_stone2.json
 948cb9c16efe033eecb743e0dfbcfcaee5d4ea16 assets/blamemod/blockstates/potted_catmint.json
 d11f020dd0b0c6a202f2ae21bc2c6c749ab5cb93 assets/blamemod/blockstates/raw_sapphire_block.json
 4c26584d33b683a867d0b263cd343b568d806dbd assets/blamemod/blockstates/sapphire_block.json
@@ -26,6 +28,8 @@ b0d2267b8c75cf6e1189506767ac7aa79ab9d516 assets/blamemod/models/block/corn_stage
 8b10340c21cc2ce984c658843f129d413d82876f assets/blamemod/models/block/corn_stage_6.json
 9c050168bc75439f5efaf0540a711c78e4c403d1 assets/blamemod/models/block/corn_stage_7.json
 7d76c279a026ba11d31f8fc7511e7d6d1655c444 assets/blamemod/models/block/corn_stage_8.json
+39f004c692eb3088c2ef841f0368d9e67157014e assets/blamemod/models/block/fake_stone.json
+ae9d088e780f8be02720a2e9799dde57c610bb89 assets/blamemod/models/block/fake_stone2.json
 9b4b467657e2adc847044298248f867f5be77076 assets/blamemod/models/block/potted_catmint.json
 b2d59408c2ad25b503605a85bac59831acf56803 assets/blamemod/models/block/raw_sapphire_block.json
 a11abc14ca3bc0cf335ddbe420ad228e0fc376ee assets/blamemod/models/block/sapphire_block.json
@@ -67,6 +71,8 @@ afafde22ddf5940f301a52eab6e9e96922ef5901 assets/blamemod/models/block/strawberry
 ade61d75d581fdc63657ccdb7ed0bd171015693c assets/blamemod/models/block/strawberry_stage4.json
 2323370a4cbe3f62804f23b6bc0772a80568dd6f assets/blamemod/models/block/strawberry_stage5.json
 022b7cb828ff26152c48cb9af847612ea73eb8e4 assets/blamemod/models/item/catmint.json
+5634699a763fcff8e2d1edc41b22e04735b032a2 assets/blamemod/models/item/fake_stone.json
+afbb1e49c3d97fe6f78b799ba054c2a9691620d1 assets/blamemod/models/item/fake_stone2.json
 2704fd397e9097c9410e5d1691475bd57d591f60 assets/blamemod/models/item/potted_catmint.json
 abc9266982802e95e51243ed49cfdcaefbc186b5 assets/blamemod/models/item/raw_sapphire_block.json
 7c2768bc1b172f9d29aee23d122054d266568a3e assets/blamemod/models/item/sapphire_block.json

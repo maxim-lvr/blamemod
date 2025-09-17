@@ -1,6 +1,8 @@
-// 1.20.1	2025-09-10T20:16:08.000237261	Loot Tables
+// 1.20.1	2025-09-17T22:11:48.000094385	Loot Tables
 0be3c47b5a0e2b1527fba9528f47835bd5805bf2 data/blamemod/loot_tables/blocks/catmint.json
 7301218e514fd828d32c75b9707ffcf26bb2de13 data/blamemod/loot_tables/blocks/corn_crop.json
+2b86e5226f829b1c84dcaad0fffca14cfe23c05f data/blamemod/loot_tables/blocks/fake_stone.json
+e99489db53f00caf65c515069e2eb84c25a3aef2 data/blamemod/loot_tables/blocks/fake_stone2.json
 742d949544f452db5a127e97b05110137805d45d data/blamemod/loot_tables/blocks/potted_catmint.json
 f2439d718253ec4320a80a5fa7664f267718d9be data/blamemod/loot_tables/blocks/raw_sapphire_block.json
 e89803554a30b2ce334df868a981117292c685ae data/blamemod/loot_tables/blocks/sapphire_block.json
