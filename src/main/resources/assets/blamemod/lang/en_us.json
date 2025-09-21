@@ -40,6 +40,8 @@
   "block.blamemod.sapphire_wall": "sapphire wall",
   "block.blamemod.sapphire_door": "sapphire door",
   "block.blamemod.sapphire_trapdoor": "sapphire trapdoor",
+  "block.blamemod.gem_polishing_station": "Gem Polishing Station",
+  "block.blamemod.gem_mixing_station": "Gem Mixing Station",
 
   "entity.minecraft.villager.blamemod.soundmaster": "Sound Master",
 

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "blamemod:block/fake_stone"
+    }
+  }
+}

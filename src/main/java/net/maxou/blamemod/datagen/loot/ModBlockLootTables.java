@@ -44,6 +44,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.SAPPHIRE_FENCE_GATE.get());
         this.dropSelf(ModBlocks.SAPPHIRE_WALL.get());
 
+
         this.add(ModBlocks.SAPPHIRE_SLAB.get(),
                 block -> createSlabItemTable(ModBlocks.SAPPHIRE_SLAB.get()));
         this.add(ModBlocks.SAPPHIRE_DOOR.get(),
@@ -72,6 +73,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         this.dropSelf(ModBlocks.CATMINT.get());
         this.add(ModBlocks.POTTED_CATMINT.get(), createPotFlowerItemTable(ModBlocks.CATMINT.get()));
+        this.dropSelf(ModBlocks.GEM_POLISHING_STATION.get());
+        this.dropSelf(ModBlocks.GEM_MIXING_STATION.get());
     }
 
 

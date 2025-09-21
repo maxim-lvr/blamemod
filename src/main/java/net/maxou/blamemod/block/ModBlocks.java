@@ -1,9 +1,7 @@
 package net.maxou.blamemod.block;
 
 import net.maxou.blamemod.BlameMod;
-import net.maxou.blamemod.block.custom.CornCropBlock;
-import net.maxou.blamemod.block.custom.SoundBlock;
-import net.maxou.blamemod.block.custom.StrawberryCropBlock;
+import net.maxou.blamemod.block.custom.*;
 import net.maxou.blamemod.item.ModItems;
 import net.maxou.blamemod.sound.ModSounds;
 import net.minecraft.sounds.SoundEvents;
@@ -79,6 +77,15 @@ public class ModBlocks {
     public static final RegistryObject<Block> POTTED_CATMINT = BLOCKS.register("potted_catmint",
             () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT),ModBlocks.CATMINT,
                     BlockBehaviour.Properties.copy(Blocks.FLOWER_POT).noOcclusion()));
+
+
+    public static final RegistryObject<Block> GEM_POLISHING_STATION = registerBlock("gem_polishing_station",
+            () -> new GemPolishingStationBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
+
+    public static final RegistryObject<Block> GEM_MIXING_STATION = registerBlock("gem_mixing_station",
+            () -> new GemMixingStationBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
+
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

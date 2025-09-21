@@ -19,7 +19,7 @@ import net.minecraftforge.fml.common.Mod;
 import java.nio.file.*;
 import java.util.*;
 
-@Mod.EventBusSubscriber(modid = BlameMod.MOD_ID)
+//@Mod.EventBusSubscriber(modid = BlameMod.MOD_ID)
 public class QueuedStructureGenerator {
 
     // Réglages généraux
