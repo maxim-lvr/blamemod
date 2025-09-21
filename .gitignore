@@ -12,7 +12,7 @@ out
 *.iws
 *.iml
 .idea
-.log
+
 
 # gradle
 build
@@ -24,3 +24,6 @@ run
 
 # Files from Forge MDK
 forge*changelog.txt
+
+*.log
+*.log.gz
