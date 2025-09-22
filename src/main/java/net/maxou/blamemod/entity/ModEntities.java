@@ -3,6 +3,7 @@ package net.maxou.blamemod.entity;
 import net.maxou.blamemod.BlameMod;
 import net.maxou.blamemod.entity.custom.DroneEntity;
 import net.maxou.blamemod.entity.custom.RhinoEntity;
+import net.maxou.blamemod.entity.custom.ZombieCyborgEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -23,6 +24,10 @@ public class ModEntities {
     public static final RegistryObject<EntityType<DroneEntity>> DRONE =
             ENTITY_TYPE.register("drone", () -> EntityType.Builder.of(DroneEntity::new, MobCategory.MONSTER)
                     .sized(0.5f, 0.5f).build("drone"));
+
+    public static final RegistryObject<EntityType<ZombieCyborgEntity>> ZOMBIE_CYBORG =
+            ENTITY_TYPE.register("zombie_cyborg", () -> EntityType.Builder.of(ZombieCyborgEntity::new, MobCategory.MONSTER)
+                    .sized(0.5f, 0.5f).build("zombie_cyborg"));
 
 
     public static void register(IEventBus eventBus) {

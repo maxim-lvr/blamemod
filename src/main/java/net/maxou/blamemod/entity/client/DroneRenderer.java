@@ -10,7 +10,7 @@ import net.minecraft.resources.ResourceLocation;
 
 public class DroneRenderer extends MobRenderer<DroneEntity, DroneModel<DroneEntity>> {
     public DroneRenderer(EntityRendererProvider.Context pContext) {
-        super(pContext, new DroneModel<>(pContext.bakeLayer(ModModelLayers.DRONE_LAYER)), 2f);
+        super(pContext, new DroneModel<>(pContext.bakeLayer(ModModelLayers.DRONE_LAYER)), 0.3f);
     }
 
     @Override

@@ -11,4 +11,7 @@ public class ModModelLayers {
     public static final ModelLayerLocation DRONE_LAYER = new ModelLayerLocation(
             new ResourceLocation(BlameMod.MOD_ID, "drone_layer"), "main");
 
+    public static final ModelLayerLocation ZOMBIE_CYBORG_LAYER = new ModelLayerLocation(
+            new ResourceLocation(BlameMod.MOD_ID, "zombie_cyborg_layer"), "main");
+
 }

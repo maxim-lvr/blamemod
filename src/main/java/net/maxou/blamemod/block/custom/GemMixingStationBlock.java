@@ -18,12 +18,15 @@ import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraftforge.network.NetworkHooks;
 import org.jetbrains.annotations.Nullable;
 
 public class GemMixingStationBlock extends BaseEntityBlock {
-    public static final VoxelShape SHAPE = Block.box(0,0,0,16,18,16);
+    public static final VoxelShape BASE = Block.box(1,0,1,15,8,15);
+    public static final VoxelShape PIC = Block.box(7,8,7,9,19,9);
+    public static final VoxelShape SHAPE = Shapes.or(BASE, PIC);
 
     public GemMixingStationBlock(Properties pProperties) {
         super(pProperties);

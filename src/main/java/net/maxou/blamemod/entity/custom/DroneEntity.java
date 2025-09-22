@@ -141,7 +141,7 @@ public class DroneEntity extends Monster implements RangedAttackMob {
 
     public static AttributeSupplier.Builder createAttributes() {
         return Monster.createLivingAttributes()
-                .add(Attributes.MAX_HEALTH, 200)
+                .add(Attributes.MAX_HEALTH, 10)
                 .add(Attributes.FOLLOW_RANGE, 240)
                 .add(Attributes.MOVEMENT_SPEED, 0.250)
                 .add(Attributes.ARMOR_TOUGHNESS, 0.2f)

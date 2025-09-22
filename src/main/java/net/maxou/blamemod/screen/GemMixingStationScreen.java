@@ -39,7 +39,7 @@ public class GemMixingStationScreen extends AbstractContainerScreen<GemMixingSta
 
     private void renderProgressArrow(GuiGraphics guiGraphics, int x, int y) {
         if(menu.isCrafting()) {
-            guiGraphics.blit(TEXTURE, x + 85, y + 30, 176, 0, 8, menu.getScaledProgress());
+            guiGraphics.blit(TEXTURE, x + 66, y + 30, 178, 0, 44, menu.getScaledProgress());
         }
     }
 

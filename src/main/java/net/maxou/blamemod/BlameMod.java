@@ -6,9 +6,11 @@ import net.maxou.blamemod.block.entity.ModBlockEntities;
 import net.maxou.blamemod.entity.ModEntities;
 import net.maxou.blamemod.entity.client.DroneRenderer;
 import net.maxou.blamemod.entity.client.RhinoRenderer;
+import net.maxou.blamemod.entity.client.ZombieCyborgRenderer;
 import net.maxou.blamemod.item.ModCreativeModTabs;
 import net.maxou.blamemod.item.ModItems;
 import net.maxou.blamemod.loot.ModLootModifiers;
+import net.maxou.blamemod.recipe.ModRecipes;
 import net.maxou.blamemod.screen.GemMixingStationScreen;
 import net.maxou.blamemod.screen.GemPolishingStationScreen;
 import net.maxou.blamemod.screen.ModMenuTypes;
@@ -50,6 +52,7 @@ public class BlameMod {
 
         ModBlockEntities.register(modEventBus);
         ModMenuTypes.register(modEventBus);
+        ModRecipes.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -83,6 +86,7 @@ public class BlameMod {
         public static void onClientSetup(FMLClientSetupEvent event) {
             EntityRenderers.register(ModEntities.RHINO.get(), RhinoRenderer::new);
             EntityRenderers.register(ModEntities.DRONE.get(), DroneRenderer::new);
+            EntityRenderers.register(ModEntities.ZOMBIE_CYBORG.get(), ZombieCyborgRenderer::new);
 
             MenuScreens.register(ModMenuTypes.GEM_POLISHING_MENU.get(), GemPolishingStationScreen::new);
             MenuScreens.register(ModMenuTypes.GEM_MIXING_MENU.get(), GemMixingStationScreen::new);
