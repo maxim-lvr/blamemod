@@ -68,6 +68,8 @@ public class ModCreativeModTabs {
                         output.accept(ModBlocks.GEM_POLISHING_STATION.get());
                         output.accept(ModBlocks.GEM_MIXING_STATION.get());
 
+                        output.accept(ModItems.RADIOACTIVE_STICK.get());
+
 
 
                         output.accept(Items.DIAMOND_AXE);

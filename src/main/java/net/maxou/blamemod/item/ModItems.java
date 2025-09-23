@@ -35,6 +35,9 @@ public class ModItems {
     public static final RegistryObject<Item> KEY_CARD = ITEMS.register("key_card",
             () -> new Item(new Item.Properties().stacksTo(1)));
 
+    public static final RegistryObject<Item> RADIOACTIVE_STICK = ITEMS.register("radioactive_stick",
+            () -> new Item(new Item.Properties()));
+
     public static final RegistryObject<Item> PINE_CONE = ITEMS.register("pine_cone",
             () -> new FuelItem(new Item.Properties(), 2));
 
