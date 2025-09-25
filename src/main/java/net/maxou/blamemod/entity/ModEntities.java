@@ -1,6 +1,7 @@
 package net.maxou.blamemod.entity;
 
 import net.maxou.blamemod.BlameMod;
+import net.maxou.blamemod.entity.custom.CubeBossEntity;
 import net.maxou.blamemod.entity.custom.DroneEntity;
 import net.maxou.blamemod.entity.custom.RhinoEntity;
 import net.maxou.blamemod.entity.custom.ZombieCyborgEntity;
@@ -27,7 +28,11 @@ public class ModEntities {
 
     public static final RegistryObject<EntityType<ZombieCyborgEntity>> ZOMBIE_CYBORG =
             ENTITY_TYPE.register("zombie_cyborg", () -> EntityType.Builder.of(ZombieCyborgEntity::new, MobCategory.MONSTER)
-                    .sized(0.5f, 0.5f).build("zombie_cyborg"));
+                    .sized(1f, 2f).build("zombie_cyborg"));
+
+    public static final RegistryObject<EntityType<CubeBossEntity>> CUBE_BOSS =
+            ENTITY_TYPE.register("cube_boss", () -> EntityType.Builder.of(CubeBossEntity::new, MobCategory.MONSTER)
+                    .sized(1f, 2f).build("zombie_cyborg"));
 
 
     public static void register(IEventBus eventBus) {

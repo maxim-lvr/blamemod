@@ -2,6 +2,7 @@ package net.maxou.blamemod.event;
 
 import net.maxou.blamemod.BlameMod;
 import net.maxou.blamemod.entity.ModEntities;
+import net.maxou.blamemod.entity.custom.CubeBossEntity;
 import net.maxou.blamemod.entity.custom.DroneEntity;
 import net.maxou.blamemod.entity.custom.RhinoEntity;
 import net.maxou.blamemod.entity.custom.ZombieCyborgEntity;
@@ -17,6 +18,7 @@ public class ModEventBusEvents {
         event.put(ModEntities.RHINO.get(), RhinoEntity.createAttributes().build());
         event.put(ModEntities.DRONE.get(), DroneEntity.createAttributes().build());
         event.put(ModEntities.ZOMBIE_CYBORG.get(), ZombieCyborgEntity.createAttributes().build());
+        event.put(ModEntities.CUBE_BOSS.get(), CubeBossEntity.createAttributes().build());
     }
 
 

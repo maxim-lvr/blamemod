@@ -1,5 +1,6 @@
 package net.maxou.blamemod.entity.custom;
 
+import net.maxou.blamemod.entity.ModEntities;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
@@ -7,6 +8,7 @@ import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.AnimationState;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Pose;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
@@ -14,6 +16,8 @@ import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.goal.*;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.animal.Animal;
+import net.minecraft.world.entity.boss.wither.WitherBoss;
+import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Items;
@@ -21,10 +25,10 @@ import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.Nullable;
 
-public class ZombieCyborgEntity extends Monster {
+public class CubeBossEntity extends Monster {
     private static final EntityDataAccessor<Boolean> ATTACKING =
-            SynchedEntityData.defineId(ZombieCyborgEntity.class, EntityDataSerializers.BOOLEAN);
-    public ZombieCyborgEntity(EntityType<? extends Monster> pEntityType, Level pLevel) {
+            SynchedEntityData.defineId(CubeBossEntity.class, EntityDataSerializers.BOOLEAN);
+    public CubeBossEntity(EntityType<? extends Monster> pEntityType, Level pLevel) {
         super(pEntityType, pLevel);
     }
 
@@ -91,20 +95,13 @@ public class ZombieCyborgEntity extends Monster {
 
     @Override
     protected void registerGoals() {
-        this.goalSelector.addGoal(0, new FloatGoal(this));
+        this.goalSelector.addGoal(0, new AvoidEntityGoal<>(this, RhinoEntity.class , 10f, 5D, 5D));
 
-        this.goalSelector.addGoal(2, new TemptGoal(this, 1.2D, Ingredient.of(Items.ACACIA_LOG), false));
-
-        this.goalSelector.addGoal(4, new WaterAvoidingRandomStrollGoal(this, 1.1D));
-        this.goalSelector.addGoal(5, new LookAtPlayerGoal(this, Player.class, 3f));
-        this.goalSelector.addGoal(6, new RandomLookAroundGoal(this));
-
-        this.targetSelector.addGoal(1, new HurtByTargetGoal(this));
     }
 
     public static AttributeSupplier.Builder createAttributes() {
         return Animal.createLivingAttributes()
-                .add(Attributes.MAX_HEALTH, 10)
+                .add(Attributes.MAX_HEALTH, 30)
                 .add(Attributes.FOLLOW_RANGE, 240)
                 .add(Attributes.MOVEMENT_SPEED, 0.250)
                 .add(Attributes.ARMOR_TOUGHNESS, 0.2f)
@@ -113,7 +110,7 @@ public class ZombieCyborgEntity extends Monster {
     }
 
 
-
+    /*
     @Override
     protected @Nullable SoundEvent getAmbientSound() {
         return SoundEvents.HOGLIN_AMBIENT;
@@ -127,5 +124,12 @@ public class ZombieCyborgEntity extends Monster {
     @Override
     protected @Nullable SoundEvent getDeathSound() {
         return SoundEvents.DOLPHIN_DEATH;
+    }
+    */
+
+    @Override
+    protected void dropCustomDeathLoot(DamageSource pSource, int pLooting, boolean pRecentlyHit) {
+        super.dropCustomDeathLoot(pSource, pLooting, pRecentlyHit);
+        ItemEntity itementity = this.spawnAtLocation(Items.EMERALD);
     }
 }

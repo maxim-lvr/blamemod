@@ -62,6 +62,7 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.RHINO_SPAWN_EGG.get());
                         output.accept(ModItems.DRONE_SPAWN_EGG.get());
                         output.accept(ModItems.ZOMBIE_CYBORG_SPAWN_EGG.get());
+                        output.accept(ModItems.CUBE_BOSS_SPAWN_EGG.get());
 
                         output.accept(ModBlocks.FAKE_STONE.get());
 

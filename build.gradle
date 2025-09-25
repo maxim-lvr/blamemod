@@ -121,11 +121,16 @@ repositories {
     //    dir 'libs'
     //}
 
+    maven { url "https://cursemaven.com" }
+
     maven {
         // location of the maven that hosts JEI files since January 2023
         name = "Jared's maven"
         url = "https://maven.blamejared.com/"
     }
+
+    mavenCentral()
+
 }
 
 dependencies {
@@ -147,6 +152,7 @@ dependencies {
     runtimeOnly(fg.deobf("mezz.jei:jei-${minecraft_version}-forge:${jei_version}"))
 
 
+    //runtimeOnly fg.deobf("curse.maven:gravity-api-forge-1283915:6636366")
 
     // Example mod dependency with JEI - using fg.deobf() ensures the dependency is remapped to your development mappings
     // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime

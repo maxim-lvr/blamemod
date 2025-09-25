@@ -1,8 +1,9 @@
-// 1.20.1	2025-09-23T16:56:49.903460141	Item Models: blamemod
+// 1.20.1	2025-09-24T20:57:28.058209071	Item Models: blamemod
 57c32994e4fc80d46f176bdcb5d92456d0b4d2f9 assets/blamemod/models/item/bar_brawl_music_disc.json
 6c9b97f4f9678d83c95641c0ec415cc361312d8a assets/blamemod/models/item/catmint.json
 9dcfb92a53162a4b6fbec1175b850e95a3599200 assets/blamemod/models/item/corn.json
 e4d0490e7b788af77e8cc76be67cbabcb4bc8299 assets/blamemod/models/item/corn_seeds.json
+63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/blamemod/models/item/cube_boss_spawn_egg.json
 63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/blamemod/models/item/drone_spawn_egg.json
 3b6ac67c0c8ca183057dbfb8d1b6bf936189401c assets/blamemod/models/item/jumping_ball.json
 434c554218f3f0410980c53d561c13a38cec35b4 assets/blamemod/models/item/metal_detector.json
