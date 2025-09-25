@@ -1,7 +1,10 @@
 package net.maxou.blamemod.event;
 
 import net.maxou.blamemod.BlameMod;
+import net.maxou.blamemod.block.entity.ModBlockEntities;
+import net.maxou.blamemod.block.entity.renderer.GemPolishingBlockEntityRenderer;
 import net.maxou.blamemod.entity.client.*;
+import net.maxou.blamemod.entity.layers.ModModelLayers;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -16,5 +19,11 @@ public class ModEventBusClientEvents {
         event.registerLayerDefinition(ModModelLayers.DRONE_LAYER, DroneModel::createBodyLayer);
         event.registerLayerDefinition(ModModelLayers.ZOMBIE_CYBORG_LAYER, ZombieCyborgModel::createBodyLayer);
         event.registerLayerDefinition(ModModelLayers.CUBE_BOSS_LAYER, CubeBossModel::createBodyLayer);
+        event.registerLayerDefinition(ModModelLayers.MAGIC_PROJECTILE_LAYER, MagicProjectileModel::createBodyLayer);
+    }
+
+    @SubscribeEvent
+    public static void registerBER(EntityRenderersEvent.RegisterRenderers event) {
+        event.registerBlockEntityRenderer(ModBlockEntities.GEM_POLISHING_BE.get(), GemPolishingBlockEntityRenderer::new);
     }
 }

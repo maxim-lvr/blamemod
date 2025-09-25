@@ -4,10 +4,7 @@ import com.mojang.logging.LogUtils;
 import net.maxou.blamemod.block.ModBlocks;
 import net.maxou.blamemod.block.entity.ModBlockEntities;
 import net.maxou.blamemod.entity.ModEntities;
-import net.maxou.blamemod.entity.client.CubeBossRenderer;
-import net.maxou.blamemod.entity.client.DroneRenderer;
-import net.maxou.blamemod.entity.client.RhinoRenderer;
-import net.maxou.blamemod.entity.client.ZombieCyborgRenderer;
+import net.maxou.blamemod.entity.client.*;
 import net.maxou.blamemod.item.ModCreativeModTabs;
 import net.maxou.blamemod.item.ModItems;
 import net.maxou.blamemod.loot.ModLootModifiers;
@@ -89,6 +86,7 @@ public class BlameMod {
             EntityRenderers.register(ModEntities.DRONE.get(), DroneRenderer::new);
             EntityRenderers.register(ModEntities.ZOMBIE_CYBORG.get(), ZombieCyborgRenderer::new);
             EntityRenderers.register(ModEntities.CUBE_BOSS.get(), CubeBossRenderer::new);
+            EntityRenderers.register(ModEntities.MAGIC_PROJECTILE.get(), MagicProjectileRenderer::new);
 
             MenuScreens.register(ModMenuTypes.GEM_POLISHING_MENU.get(), GemPolishingStationScreen::new);
             MenuScreens.register(ModMenuTypes.GEM_MIXING_MENU.get(), GemMixingStationScreen::new);

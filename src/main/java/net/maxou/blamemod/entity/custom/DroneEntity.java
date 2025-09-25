@@ -63,7 +63,6 @@ public class DroneEntity extends Monster implements RangedAttackMob {
             this.setDeltaMovement(this.getDeltaMovement().add(0, -0.1D, 0)); // descend
         }
 
-        // --- gestion du rayon laser ---
         if (!this.level().isClientSide) {
             if (laserCooldown > 0) {
                 laserCooldown--;

@@ -7,6 +7,7 @@ import net.maxou.blamemod.entity.ModEntities;
 import net.maxou.blamemod.item.custom.JumpingBall;
 import net.maxou.blamemod.item.custom.MetalDetectorItem;
 import net.maxou.blamemod.item.custom.ModArmorItem;
+import net.maxou.blamemod.item.custom.RadiationStaffItem;
 import net.maxou.blamemod.sound.ModSounds;
 import net.minecraft.world.item.*;
 import net.minecraftforge.common.ForgeSpawnEggItem;
@@ -51,6 +52,9 @@ public class ModItems {
             () -> new ShovelItem(ModToolTiers.SAPPHIRE, 0, 0, new Item.Properties()));
     public static final RegistryObject<Item> SAPPHIRE_HOE= ITEMS.register("sapphire_hoe",
             () -> new HoeItem(ModToolTiers.SAPPHIRE, 0, 0, new Item.Properties()));
+
+    public static final RegistryObject<Item> RADIATION_STAFF = ITEMS.register("radiation_staff",
+            () -> new RadiationStaffItem(new Item.Properties().durability(500)));
 
     public static final RegistryObject<Item> SAPPHIRE_HELMET = ITEMS.register("sapphire_helmet",
             () -> new ModArmorItem(ModArmorMaterials.SAPPHIRE, ArmorItem.Type.HELMET, new Item.Properties()));

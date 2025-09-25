@@ -1,10 +1,7 @@
 package net.maxou.blamemod.entity;
 
 import net.maxou.blamemod.BlameMod;
-import net.maxou.blamemod.entity.custom.CubeBossEntity;
-import net.maxou.blamemod.entity.custom.DroneEntity;
-import net.maxou.blamemod.entity.custom.RhinoEntity;
-import net.maxou.blamemod.entity.custom.ZombieCyborgEntity;
+import net.maxou.blamemod.entity.custom.*;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -33,6 +30,14 @@ public class ModEntities {
     public static final RegistryObject<EntityType<CubeBossEntity>> CUBE_BOSS =
             ENTITY_TYPE.register("cube_boss", () -> EntityType.Builder.of(CubeBossEntity::new, MobCategory.MONSTER)
                     .sized(1f, 2f).build("zombie_cyborg"));
+
+    public static final RegistryObject<EntityType<MagicProjectileEntity>> MAGIC_PROJECTILE =
+            ENTITY_TYPE.register("magic_projectile",
+                    () -> EntityType.Builder.<MagicProjectileEntity>of(MagicProjectileEntity::new, MobCategory.MISC)
+                            .sized(0.5f,0.5f)
+                            .clientTrackingRange(4)
+                            .updateInterval(20)
+                            .build("magic_projectile"));
 
 
     public static void register(IEventBus eventBus) {

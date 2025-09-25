@@ -3,6 +3,7 @@ package net.maxou.blamemod.entity.client;
 import com.mojang.blaze3d.vertex.PoseStack;
 import net.maxou.blamemod.BlameMod;
 import net.maxou.blamemod.entity.custom.DroneEntity;
+import net.maxou.blamemod.entity.layers.ModModelLayers;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.renderer.entity.MobRenderer;

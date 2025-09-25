@@ -40,6 +40,7 @@ public class ModCreativeModTabs {
                         output.accept(ModBlocks.SAPPHIRE_STAIRS.get());
                         output.accept(ModBlocks.SAPPHIRE_SLAB.get());
                         output.accept(ModItems.KEY_CARD.get());
+                        output.accept(ModItems.RADIATION_STAFF.get());
 
                         output.accept(ModItems.SAPPHIRE_SWORD.get());
                         output.accept(ModItems.SAPPHIRE_PICKAXE.get());
