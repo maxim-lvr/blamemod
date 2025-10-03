@@ -85,6 +85,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> GEM_MIXING_STATION = registerBlock("gem_mixing_station",
             () -> new GemMixingStationBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
 
+    public static final RegistryObject<Block> COMPACTING_MACHINE_STATION = registerBlock("compacting_machine_station",
+            () -> new CompactingMachineStationBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
+
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

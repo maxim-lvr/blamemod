@@ -1,6 +1,8 @@
 package net.maxou.blamemod.item.custom;
 
+import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.network.chat.Component;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -22,12 +24,18 @@ public class JumpingBall extends Item {
     @Override
     public InteractionResult useOn(UseOnContext pContext) {
         Player player = pContext.getPlayer();
-        if(!pContext.getLevel().isClientSide){
-            outputValuableCoordinates(player);
+        Level level = pContext.getLevel();
+
+        if (!level.isClientSide && player instanceof ServerPlayer serverPlayer) {
+            CommandSourceStack source = serverPlayer.createCommandSourceStack();
+            serverPlayer.getServer().getCommands().performPrefixedCommand(
+                    source, "gravity set_base_direction up " + player.getName().getString()
+            );
+
             player.addEffect(new MobEffectInstance(MobEffects.JUMP, 1000, 5));
         }
 
-        return super.useOn(pContext);
+        return InteractionResult.SUCCESS;
     }
 
     @Override

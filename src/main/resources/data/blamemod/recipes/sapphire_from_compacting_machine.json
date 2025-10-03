@@ -1,0 +1,18 @@
+{
+  "type": "blamemod:compacting_machine",
+  "ingredients": [
+    {
+      "item": "blamemod:raw_sapphire"
+    },
+    {
+      "item": "blamemod:raw_sapphire"
+    },
+    {
+      "item": "blamemod:raw_sapphire"
+    }
+  ],
+  "output": {
+    "count": 10,
+    "item": "blamemod:sapphire"
+  }
+}

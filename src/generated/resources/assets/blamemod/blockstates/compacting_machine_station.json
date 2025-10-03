@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "blamemod:block/compacting_machine_station"
+    }
+  }
+}

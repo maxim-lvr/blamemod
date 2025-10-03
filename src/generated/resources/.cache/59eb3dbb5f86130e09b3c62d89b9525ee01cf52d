@@ -1,5 +1,6 @@
-// 1.20.1	2025-09-21T20:31:43.896322735	Loot Tables
+// 1.20.1	2025-10-03T15:21:05.679412533	Loot Tables
 0be3c47b5a0e2b1527fba9528f47835bd5805bf2 data/blamemod/loot_tables/blocks/catmint.json
+e63503be04a8485c0f8e66df508ac094464f6905 data/blamemod/loot_tables/blocks/compacting_machine_station.json
 7301218e514fd828d32c75b9707ffcf26bb2de13 data/blamemod/loot_tables/blocks/corn_crop.json
 2b86e5226f829b1c84dcaad0fffca14cfe23c05f data/blamemod/loot_tables/blocks/fake_stone.json
 f115112038acfdefd3ba4ff76eaa8007e055d18d data/blamemod/loot_tables/blocks/gem_mixing_station.json

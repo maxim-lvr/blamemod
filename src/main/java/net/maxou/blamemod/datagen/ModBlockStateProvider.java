@@ -58,6 +58,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 new ModelFile.UncheckedModelFile(modLoc("block/gem_polishing_station")));
         simpleBlockWithItem(ModBlocks.GEM_MIXING_STATION.get(),
                 new ModelFile.UncheckedModelFile(modLoc("block/gem_mixing_station")));
+        simpleBlockWithItem(ModBlocks.COMPACTING_MACHINE_STATION.get(),
+                new ModelFile.UncheckedModelFile(modLoc("block/compacting_machine_station")));
     }
 
     public void makeStrawberryCrop(CropBlock block, String modelName, String textureName) {

@@ -18,6 +18,10 @@ public class ModRecipes {
     public static final RegistryObject<RecipeSerializer<GemMixingRecipe>> GEM_MIXING_SERIALIZER =
             SERIALIZERS.register("gem_mixing", () -> GemMixingRecipe.Serializer.INSTANCE);
 
+    public static final RegistryObject<RecipeSerializer<CompactingMachineRecipe>> COMPACTING_MACHINE_SERIALIZER =
+            SERIALIZERS.register("compacting_machine", () -> CompactingMachineRecipe.Serializer.INSTANCE);
+
+
     public static void register(IEventBus eventBus) {
         SERIALIZERS.register(eventBus);
     }

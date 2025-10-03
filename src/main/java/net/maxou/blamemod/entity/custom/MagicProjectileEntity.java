@@ -2,7 +2,11 @@ package net.maxou.blamemod.entity.custom;
 
 import net.maxou.blamemod.entity.ModEntities;
 import net.maxou.blamemod.sound.ModSounds;
+import net.minecraft.client.particle.FireworkParticles;
+import net.minecraft.client.particle.Particle;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.particles.ParticleOptions;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.syncher.EntityDataAccessor;
@@ -17,6 +21,7 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.projectile.Projectile;
 import net.minecraft.world.entity.projectile.ProjectileUtil;
+import net.minecraft.world.item.alchemy.Potions;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.phys.EntityHitResult;
@@ -37,22 +42,21 @@ public class MagicProjectileEntity extends Projectile {
     public MagicProjectileEntity(Level pLevel, Player player) {
         super(ModEntities.MAGIC_PROJECTILE.get(), pLevel);
         setOwner(player);
-        BlockPos blockPos = player.blockPosition();
-        double d0 = (double) blockPos.getX() + 0.5D;
-        double d1 = (double) blockPos.getY() + 1.75D;
-        double d2 = (double) blockPos.getZ() + 0.5D;
-        this.moveTo(d0,d1,d2, this.getYRot(), this.getXRot());
+        this.moveTo(
+                player.getX(),
+                player.getEyeY() - 0.1,
+                player.getZ(),
+                player.getYRot(),
+                player.getXRot()
+        );
 
+        this.shootFromRotation(player, player.getXRot(), player.getYRot(), 0.0F, 1.5F, 0.0F);
+        this.hasImpulse = true;
     }
 
     @Override
     public void tick() {
         super.tick();
-        if(this.entityData.get(HIT)) {
-            if(this.tickCount >= counter) {
-                this.discard();
-            }
-        }
 
         if (this.tickCount >= 300) {
             this.remove(RemovalReason.DISCARDED);
@@ -71,12 +75,12 @@ public class MagicProjectileEntity extends Projectile {
         double d5 = vec3.x;
         double d6 = vec3.y;
         double d7 = vec3.z;
-/*
+
         for(int i = 1; i < 5; ++i) {
-            this.level().addParticle(ModParticles.ALEXANDRITE_PARTICLES.get(), d0-(d5*2), d1-(d6*2), d2-(d7*2),
+            this.level().addParticle(ParticleTypes.CAMPFIRE_COSY_SMOKE, d0-(d5*2), d1-(d6*2), d2-(d7*2),
                     -d5, -d6 - 0.1D, -d7);
         }
-*/
+
         if (this.level().getBlockStates(this.getBoundingBox()).noneMatch(BlockBehaviour.BlockStateBase::isAir)) {
             this.discard();
         } else if (this.isInWaterOrBubble()) {
@@ -109,6 +113,7 @@ public class MagicProjectileEntity extends Projectile {
                 livingHitEntity.addEffect(new MobEffectInstance(MobEffects.POISON, 100, 1), owner);
             }
         }
+        this.discard();
     }
 
     @Override
@@ -126,17 +131,7 @@ public class MagicProjectileEntity extends Projectile {
             return;
         }
 
-        if(hitResult.getType() == HitResult.Type.ENTITY && hitResult instanceof EntityHitResult entityHitResult) {
-            Entity hit = entityHitResult.getEntity();
-            Entity owner = this.getOwner();
-            if(owner != hit) {
-                this.entityData.set(HIT, true);
-                counter = this.tickCount + 5;
-            }
-        } else {
-            this.entityData.set(HIT, true);
-            counter = this.tickCount + 5;
-        }
+        this.discard();
     }
 
 

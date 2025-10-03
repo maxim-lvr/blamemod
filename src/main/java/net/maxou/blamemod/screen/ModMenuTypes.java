@@ -20,6 +20,9 @@ public class ModMenuTypes {
     public static final RegistryObject<MenuType<GemMixingStationMenu>> GEM_MIXING_MENU =
             registerMenuType("gem_mixing_menu", GemMixingStationMenu::new);
 
+    public static final RegistryObject<MenuType<CompactingMachineStationMenu>> COMPACTING_MACHINE_MENU =
+            registerMenuType("compacting_machine_menu", CompactingMachineStationMenu::new);
+
     private static <T extends AbstractContainerMenu>RegistryObject<MenuType<T>> registerMenuType(String name, IContainerFactory<T> factory) {
         return MENUS.register(name, () -> IForgeMenuType.create(factory));
     }

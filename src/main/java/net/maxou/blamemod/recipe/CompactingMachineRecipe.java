@@ -14,13 +14,13 @@ import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.Nullable;
 
-public class GemMixingRecipe implements Recipe<SimpleContainer> {
+public class CompactingMachineRecipe implements Recipe<SimpleContainer> {
 
     private final NonNullList<Ingredient> inputItems;
     private final ItemStack output;
     private final ResourceLocation id;
 
-    public GemMixingRecipe(NonNullList<Ingredient> inputItems, ItemStack output, ResourceLocation id) {
+    public CompactingMachineRecipe(NonNullList<Ingredient> inputItems, ItemStack output, ResourceLocation id) {
         this.inputItems = inputItems;
         this.output = output;
         this.id = id;
@@ -73,18 +73,18 @@ public class GemMixingRecipe implements Recipe<SimpleContainer> {
         return Type.INSTANCE;
     }
 
-    public static class Type implements RecipeType<GemMixingRecipe> {
+    public static class Type implements RecipeType<CompactingMachineRecipe> {
         public static final Type INSTANCE = new Type();
-        public static final String ID = "gem_mixing";
+        public static final String ID = "compacting_machine";
     }
 
-    public static class Serializer implements RecipeSerializer<GemMixingRecipe>{
+    public static class Serializer implements RecipeSerializer<CompactingMachineRecipe>{
         public static final Serializer INSTANCE = new Serializer();
-        public static final ResourceLocation ID = new ResourceLocation(BlameMod.MOD_ID, "gem_mixing");
+        public static final ResourceLocation ID = new ResourceLocation(BlameMod.MOD_ID, "compacting_machine");
 
 
         @Override
-        public GemMixingRecipe fromJson(ResourceLocation pRecipeId, JsonObject pSerializedRecipe) {
+        public CompactingMachineRecipe fromJson(ResourceLocation pRecipeId, JsonObject pSerializedRecipe) {
             ItemStack output = ShapedRecipe.itemStackFromJson(GsonHelper.getAsJsonObject(pSerializedRecipe, "output"));
 
             JsonArray indgredients = GsonHelper.getAsJsonArray(pSerializedRecipe, "ingredients");
@@ -95,11 +95,11 @@ public class GemMixingRecipe implements Recipe<SimpleContainer> {
 
             }
 
-            return new GemMixingRecipe(inputs,output,pRecipeId);
+            return new CompactingMachineRecipe(inputs,output,pRecipeId);
         }
 
         @Override
-        public @Nullable GemMixingRecipe fromNetwork(ResourceLocation pRecipeId, FriendlyByteBuf pBuffer) {
+        public @Nullable CompactingMachineRecipe fromNetwork(ResourceLocation pRecipeId, FriendlyByteBuf pBuffer) {
             NonNullList<Ingredient> inputs = NonNullList.withSize(pBuffer.readInt(), Ingredient.EMPTY);
 
             for (int i=0; i<inputs.size();i++){
@@ -107,11 +107,11 @@ public class GemMixingRecipe implements Recipe<SimpleContainer> {
             }
 
             ItemStack output = pBuffer.readItem();
-            return new GemMixingRecipe(inputs, output, pRecipeId);
+            return new CompactingMachineRecipe(inputs, output, pRecipeId);
         }
 
         @Override
-        public void toNetwork(FriendlyByteBuf pBuffer, GemMixingRecipe pRecipe) {
+        public void toNetwork(FriendlyByteBuf pBuffer, CompactingMachineRecipe pRecipe) {
             pBuffer.writeInt(pRecipe.inputItems.size());
 
             for(Ingredient ingredient : pRecipe.getIngredients()){

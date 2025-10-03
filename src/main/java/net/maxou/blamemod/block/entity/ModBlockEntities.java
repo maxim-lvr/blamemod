@@ -22,6 +22,11 @@ public class ModBlockEntities {
                     BlockEntityType.Builder.of(GemMixingStationBlockEntity::new,
                             ModBlocks.GEM_MIXING_STATION.get()).build(null));
 
+    public static final RegistryObject<BlockEntityType<CompactingMachineStationBlockEntity>> COMPACTING_MACHINE_BE =
+            BLOCK_ENTITIES.register("compacting_machine_be", () ->
+                    BlockEntityType.Builder.of(CompactingMachineStationBlockEntity::new,
+                            ModBlocks.COMPACTING_MACHINE_STATION.get()).build(null));
+
     public static void register(IEventBus eventBus) {
         BLOCK_ENTITIES.register(eventBus);
     }

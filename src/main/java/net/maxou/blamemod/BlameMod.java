@@ -9,6 +9,7 @@ import net.maxou.blamemod.item.ModCreativeModTabs;
 import net.maxou.blamemod.item.ModItems;
 import net.maxou.blamemod.loot.ModLootModifiers;
 import net.maxou.blamemod.recipe.ModRecipes;
+import net.maxou.blamemod.screen.CompactingMachineStationScreen;
 import net.maxou.blamemod.screen.GemMixingStationScreen;
 import net.maxou.blamemod.screen.GemPolishingStationScreen;
 import net.maxou.blamemod.screen.ModMenuTypes;
@@ -90,6 +91,7 @@ public class BlameMod {
 
             MenuScreens.register(ModMenuTypes.GEM_POLISHING_MENU.get(), GemPolishingStationScreen::new);
             MenuScreens.register(ModMenuTypes.GEM_MIXING_MENU.get(), GemMixingStationScreen::new);
+            MenuScreens.register(ModMenuTypes.COMPACTING_MACHINE_MENU.get(), CompactingMachineStationScreen::new);
         }
     }
 }

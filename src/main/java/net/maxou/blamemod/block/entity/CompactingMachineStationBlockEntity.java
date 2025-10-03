@@ -1,7 +1,7 @@
 package net.maxou.blamemod.block.entity;
 
-import net.maxou.blamemod.recipe.GemMixingRecipe;
-import net.maxou.blamemod.screen.GemMixingStationMenu;
+import net.maxou.blamemod.recipe.CompactingMachineRecipe;
+import net.maxou.blamemod.screen.CompactingMachineStationMenu;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
@@ -28,7 +28,7 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.Optional;
 
-public class GemMixingStationBlockEntity extends BlockEntity implements MenuProvider {
+public class CompactingMachineStationBlockEntity extends BlockEntity implements MenuProvider {
     private final ItemStackHandler itemHandler = new ItemStackHandler(4);
 
     private static final int INPUT_SLOT1 = 0;
@@ -42,14 +42,14 @@ public class GemMixingStationBlockEntity extends BlockEntity implements MenuProv
     private int progress = 0;
     private int maxProgress = 78;
 
-    public GemMixingStationBlockEntity(BlockPos pPos, BlockState pBlockState) {
-        super(ModBlockEntities.GEM_MIXING_BE.get(), pPos, pBlockState);
+    public CompactingMachineStationBlockEntity(BlockPos pPos, BlockState pBlockState) {
+        super(ModBlockEntities.COMPACTING_MACHINE_BE.get(), pPos, pBlockState);
         this.data = new ContainerData() {
             @Override
             public int get(int pIndex) {
                 return switch (pIndex){
-                    case 0 -> GemMixingStationBlockEntity.this.progress;
-                    case 1 -> GemMixingStationBlockEntity.this.maxProgress;
+                    case 0 -> CompactingMachineStationBlockEntity.this.progress;
+                    case 1 -> CompactingMachineStationBlockEntity.this.maxProgress;
                     default -> 0;
                 };
             }
@@ -57,8 +57,8 @@ public class GemMixingStationBlockEntity extends BlockEntity implements MenuProv
             @Override
             public void set(int pIndex, int pValue) {
                 switch (pIndex) {
-                    case 0 -> GemMixingStationBlockEntity.this.progress = pValue;
-                    case 1 -> GemMixingStationBlockEntity.this.maxProgress = pValue;
+                    case 0 -> CompactingMachineStationBlockEntity.this.progress = pValue;
+                    case 1 -> CompactingMachineStationBlockEntity.this.maxProgress = pValue;
                 }
             }
 
@@ -104,13 +104,13 @@ public class GemMixingStationBlockEntity extends BlockEntity implements MenuProv
 
     @Override
     public @Nullable AbstractContainerMenu createMenu(int pContainerId, Inventory pPlayerInventory, Player pPlayer) {
-        return new GemMixingStationMenu(pContainerId, pPlayerInventory, this, this.data);
+        return new CompactingMachineStationMenu(pContainerId, pPlayerInventory, this, this.data);
     }
 
     @Override
     protected void saveAdditional(CompoundTag pTag) {
         pTag.put("inventory", itemHandler.serializeNBT());
-        pTag.putInt("gem_mixing_station_progress", progress);
+        pTag.putInt("compacting_machine_station_progress", progress);
 
         super.saveAdditional(pTag);
     }
@@ -119,7 +119,7 @@ public class GemMixingStationBlockEntity extends BlockEntity implements MenuProv
     public void load(CompoundTag pTag) {
         super.load(pTag);
         itemHandler.deserializeNBT(pTag.getCompound("inventory"));
-        progress = pTag.getInt("gem_mixing_station_progress");
+        progress = pTag.getInt("compacting_machine_station_progress");
     }
 
 
@@ -142,7 +142,7 @@ public class GemMixingStationBlockEntity extends BlockEntity implements MenuProv
     }
 
     private void craftItem() {
-        Optional<GemMixingRecipe> recipe = getCurrentRecipe();
+        Optional<CompactingMachineRecipe> recipe = getCurrentRecipe();
         ItemStack result = recipe.get().getResultItem(null);
 
         this.itemHandler.extractItem(INPUT_SLOT1, 1, false);
@@ -154,7 +154,7 @@ public class GemMixingStationBlockEntity extends BlockEntity implements MenuProv
     }
 
     private boolean hasRecipe() {
-        Optional<GemMixingRecipe> recipe = getCurrentRecipe();
+        Optional<CompactingMachineRecipe> recipe = getCurrentRecipe();
 
         if(recipe.isEmpty()){
             return false;
@@ -165,13 +165,13 @@ public class GemMixingStationBlockEntity extends BlockEntity implements MenuProv
         return canInsertAmountIntoOutputSlot(result.getCount()) && canInsertItemIntoOutputSlot(result.getItem());
     }
 
-    private Optional<GemMixingRecipe> getCurrentRecipe() {
+    private Optional<CompactingMachineRecipe> getCurrentRecipe() {
         SimpleContainer inventory = new SimpleContainer(this.itemHandler.getSlots());
         for(int i = 0;i<itemHandler.getSlots(); i++){
             inventory.setItem(i, this.itemHandler.getStackInSlot(i));
         }
 
-        return this.level.getRecipeManager().getRecipeFor(GemMixingRecipe.Type.INSTANCE, inventory, level);
+        return this.level.getRecipeManager().getRecipeFor(CompactingMachineRecipe.Type.INSTANCE, inventory, level);
     }
 
     private boolean canInsertItemIntoOutputSlot(Item item) {
