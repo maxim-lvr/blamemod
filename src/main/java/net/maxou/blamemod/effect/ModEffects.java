@@ -18,6 +18,9 @@ public class ModEffects  {
             () -> new SlimeyEffect(MobEffectCategory.NEUTRAL, 0x36ebab).addAttributeModifier(Attributes.MOVEMENT_SPEED,
                     "7107DE5E-7CE8-4030-940E-514C1F160890", -0.25f, AttributeModifier.Operation.MULTIPLY_TOTAL));
 
+    public static final RegistryObject<MobEffect> FREEZE_EFFECT = MOB_EFFECTS.register("freeze",
+            () -> new FreezeEffect(MobEffectCategory.HARMFUL, 0x46e0a4));
+
     public static void register(IEventBus eventBus){
         MOB_EFFECTS.register(eventBus);
     }
