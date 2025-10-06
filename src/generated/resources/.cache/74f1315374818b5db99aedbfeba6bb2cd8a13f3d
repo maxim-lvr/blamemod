@@ -1,16 +1,19 @@
-// 1.20.1	2025-10-03T14:32:42.934117496	Item Models: blamemod
+// 1.20.1	2025-10-03T21:30:16.696983484	Item Models: blamemod
 57c32994e4fc80d46f176bdcb5d92456d0b4d2f9 assets/blamemod/models/item/bar_brawl_music_disc.json
 6c9b97f4f9678d83c95641c0ec415cc361312d8a assets/blamemod/models/item/catmint.json
 9dcfb92a53162a4b6fbec1175b850e95a3599200 assets/blamemod/models/item/corn.json
 e4d0490e7b788af77e8cc76be67cbabcb4bc8299 assets/blamemod/models/item/corn_seeds.json
 63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/blamemod/models/item/cube_boss_spawn_egg.json
+54348834fd850cf92aff4aad0c40b5f0a92fe3b8 assets/blamemod/models/item/down_ball.json
 63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/blamemod/models/item/drone_spawn_egg.json
 3b6ac67c0c8ca183057dbfb8d1b6bf936189401c assets/blamemod/models/item/jumping_ball.json
+0c4f1ec0030f69ee530f19efe43523b412584d9a assets/blamemod/models/item/left_ball.json
 434c554218f3f0410980c53d561c13a38cec35b4 assets/blamemod/models/item/metal_detector.json
 a1c2d11caa1acb11541d11eccf929a331c9914a0 assets/blamemod/models/item/pine_cone.json
 fdf78fa5e7559f3d6ce1697b534610104428cdca assets/blamemod/models/item/radioactive_stick.json
 30a900fb118634d0b33eca5f20653983ad2da637 assets/blamemod/models/item/raw_sapphire.json
 63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/blamemod/models/item/rhino_spawn_egg.json
+7552fa1b5ecefd6a19d8ec0d0b8527f0fc1e94dc assets/blamemod/models/item/right_ball.json
 f31ce974284d80b18744c5bfd4ca016e1f10863c assets/blamemod/models/item/sapphire.json
 7508c9ee031e3400c287a95e54a477ec32e1873e assets/blamemod/models/item/sapphire_axe.json
 eca0e507c760e2130237501eeb114242ed617a8f assets/blamemod/models/item/sapphire_boots.json
@@ -72,4 +75,5 @@ cf4ed9cda45d9dea409a60df04632ad00e34ecd5 assets/blamemod/models/item/sapphire_sl
 970664dfb4170e1cc05705cb212e464bd00388b2 assets/blamemod/models/item/sapphire_wall.json
 3153a3cb81f7bf0d780aa41f9e3c68fa6b24cad5 assets/blamemod/models/item/strawberry.json
 325dcaf1914c495ef88ff94cbc6d94b157fa1dfa assets/blamemod/models/item/strawberry_seeds.json
+61af9f7e6241622cac5ab1f3ef6abaea7e4e6111 assets/blamemod/models/item/up_ball.json
 63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/blamemod/models/item/zombie_cyborg_spawn_egg.json

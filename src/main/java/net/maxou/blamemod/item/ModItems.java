@@ -4,10 +4,7 @@ import net.maxou.blamemod.BlameMod;
 import net.maxou.blamemod.block.ModBlocks;
 import net.maxou.blamemod.block.custom.FuelItem;
 import net.maxou.blamemod.entity.ModEntities;
-import net.maxou.blamemod.item.custom.JumpingBall;
-import net.maxou.blamemod.item.custom.MetalDetectorItem;
-import net.maxou.blamemod.item.custom.ModArmorItem;
-import net.maxou.blamemod.item.custom.RadiationStaffItem;
+import net.maxou.blamemod.item.custom.*;
 import net.maxou.blamemod.sound.ModSounds;
 import net.minecraft.world.item.*;
 import net.minecraftforge.common.ForgeSpawnEggItem;
@@ -38,6 +35,16 @@ public class ModItems {
 
     public static final RegistryObject<Item> RADIOACTIVE_STICK = ITEMS.register("radioactive_stick",
             () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> UP_BALL = ITEMS.register("up_ball",
+            () -> new UpBall(new Item.Properties()));
+    public static final RegistryObject<Item> DOWN_BALL = ITEMS.register("down_ball",
+            () -> new DownBall(new Item.Properties()));
+    public static final RegistryObject<Item> LEFT_BALL = ITEMS.register("left_ball",
+            () -> new LeftBall(new Item.Properties()));
+    public static final RegistryObject<Item> RIGHT_BALL = ITEMS.register("right_ball",
+            () -> new RightBall(new Item.Properties()));
+
 
     public static final RegistryObject<Item> PINE_CONE = ITEMS.register("pine_cone",
             () -> new FuelItem(new Item.Properties(), 2));

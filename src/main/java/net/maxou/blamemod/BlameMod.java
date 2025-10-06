@@ -3,6 +3,7 @@ package net.maxou.blamemod;
 import com.mojang.logging.LogUtils;
 import net.maxou.blamemod.block.ModBlocks;
 import net.maxou.blamemod.block.entity.ModBlockEntities;
+import net.maxou.blamemod.effect.ModEffects;
 import net.maxou.blamemod.entity.ModEntities;
 import net.maxou.blamemod.entity.client.*;
 import net.maxou.blamemod.item.ModCreativeModTabs;
@@ -52,6 +53,7 @@ public class BlameMod {
         ModBlockEntities.register(modEventBus);
         ModMenuTypes.register(modEventBus);
         ModRecipes.register(modEventBus);
+        ModEffects.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

@@ -52,6 +52,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.STRAWBERRY_SEEDS);
 
         simpleItem(ModItems.RADIOACTIVE_STICK);
+        simpleItem(ModItems.UP_BALL);
+        simpleItem(ModItems.DOWN_BALL);
+        simpleItem(ModItems.LEFT_BALL);
+        simpleItem(ModItems.RIGHT_BALL);
 
         simpleItem(ModItems.CORN);
         simpleItem(ModItems.CORN_SEEDS);

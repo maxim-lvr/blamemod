@@ -69,9 +69,14 @@ public class ModCreativeModTabs {
 
                         output.accept(ModBlocks.GEM_POLISHING_STATION.get());
                         output.accept(ModBlocks.GEM_MIXING_STATION.get());
+                        output.accept(ModBlocks.COMPACTING_MACHINE_STATION.get());
+
 
                         output.accept(ModItems.RADIOACTIVE_STICK.get());
-
+                        output.accept(ModItems.UP_BALL.get());
+                        output.accept(ModItems.DOWN_BALL.get());
+                        output.accept(ModItems.LEFT_BALL.get());
+                        output.accept(ModItems.RIGHT_BALL.get());
 
 
                         output.accept(Items.DIAMOND_AXE);

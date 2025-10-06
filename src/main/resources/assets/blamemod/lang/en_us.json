@@ -31,6 +31,11 @@
   "tooltip.blamemod.metal_detector.tooltip": "Finds valuable underground!",
   "tooltip.blamemod.jumping_ball.tooltip": "Lets right click",
 
+  "tooltip.blamemod.up_ball.tooltip": "Up Direction",
+  "tooltip.blamemod.down_ball.tooltip": "Down Direction",
+  "tooltip.blamemod.left_ball.tooltip": "Left Direction",
+  "tooltip.blamemod.right_ball.tooltip": "Right Direction",
+
   "block.blamemod.sapphire_stairs": "sapphire stairs",
   "block.blamemod.sapphire_slab": "sapphire slab",
   "block.blamemod.sapphire_button": "sapphire button",
@@ -42,6 +47,9 @@
   "block.blamemod.sapphire_trapdoor": "sapphire trapdoor",
   "block.blamemod.gem_polishing_station": "Gem Polishing Station",
   "block.blamemod.gem_mixing_station": "Gem Mixing Station",
+
+
+  "effect.blamemod.slimey":"Slimey",
 
   "entity.minecraft.villager.blamemod.soundmaster": "Sound Master",
 
