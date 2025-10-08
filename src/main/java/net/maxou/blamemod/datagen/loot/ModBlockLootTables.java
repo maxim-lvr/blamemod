@@ -33,6 +33,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.SOUND_BLOCK.get());
         this.dropSelf(ModBlocks.FAKE_STONE.get());
 
+
         this.add(ModBlocks.SAPPHIRE_ORE.get(),
                 block -> createCopperLikeOreDrops(ModBlocks.SAPPHIRE_ORE.get(), ModItems.RAW_SAPPHIRE.get()));
 
@@ -76,6 +77,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.GEM_POLISHING_STATION.get());
         this.dropSelf(ModBlocks.GEM_MIXING_STATION.get());
         this.dropSelf(ModBlocks.COMPACTING_MACHINE_STATION.get());
+        this.dropSelf(ModBlocks.SPIKE_BLOCK.get());
     }
 
 

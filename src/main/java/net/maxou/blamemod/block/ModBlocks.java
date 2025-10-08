@@ -88,6 +88,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> COMPACTING_MACHINE_STATION = registerBlock("compacting_machine_station",
             () -> new CompactingMachineStationBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
 
+    public static final RegistryObject<Block> SPIKE_BLOCK = registerBlock("spike_block",
+            () -> new SpikeBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
+
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

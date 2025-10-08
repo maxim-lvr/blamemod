@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "blamemod:block/spike_block_base",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "blamemod:block/spike_block_base",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "blamemod:block/spike_block_base",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "blamemod:block/spike_block_base",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "blamemod:block/spike_block_base"
+    },
+    "facing=west": {
+      "model": "blamemod:block/spike_block_base",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

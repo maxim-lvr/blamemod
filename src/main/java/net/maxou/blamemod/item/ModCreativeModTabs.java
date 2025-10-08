@@ -77,6 +77,7 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.DOWN_BALL.get());
                         output.accept(ModItems.LEFT_BALL.get());
                         output.accept(ModItems.RIGHT_BALL.get());
+                        output.accept(ModBlocks.SPIKE_BLOCK.get());
 
 
                         output.accept(Items.DIAMOND_AXE);
